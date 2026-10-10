@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Press+Start+2P&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-snap-type: proximity;
+    scroll-behavior: smooth;
+}
+body{
+    .nombre{
+        h1{
+            /* nombre del autor en el portafolio */
+            font-size: 22px;
+            font-weight: 400;
+            font-family: sans-serif
+        }
+        h2{
+            /* parte bajo del nombre "Design & research" */
+            font-size: 25px;
+            font-family: "Playfair Display", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+
+        }
+    }
+    h1{
+        /* palabras de contenido grande en contenedores */
+        font-size: 25px;
+        font-family: sans-serif;
+        font-weight: 400;
+    }
+    h2{
+        /* palabras de titulo pequeño en encabezados de contenedores */
+        font-size: 17px;
+        font-family: sans-serif;
+        font-weight: 400;
+    }
+    h3{ 
+        /* palabras de links */
+        field-sizing: 22px;
+        font-family: sans-serif;
+        font-weight: 400;
+    }
+    h4{
+        /* palabras de contactos */
+        font-size: 22px;
+        font-family: serif;
+        font-weight: 400;
+    }
+}
