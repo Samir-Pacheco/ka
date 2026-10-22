@@ -187,6 +187,9 @@
                 height: 50px;
                 animation: mov_arrow 1000ms alternate infinite;
                 color: white;
+                position: absolute;
+                justify-self: center;
+                left: 50%;
                 
             }
             
