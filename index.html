@@ -6,22 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>desde 0 replica</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <style type="text/tailwindcss">
+        :root{
+            --grid-rows-contenedores: auto 1fr auto;
+            --justify-self-fend: flex-end;
+        }
+        
+        @theme {
+            --font-playfair: "Playfair Display";
+            --grid-rows-contenedores: var(--grid-rows-contenedores)
+            --justify-self-fend: var(--justify-self-fend)
+        }
+    </style>
 </head>
 <body class="bg-black text-white grid-rows-2 h-full max-w-screen m-0 selection:bg-gray-400">
     <main class="max-w-screen">
-        <div class="min-h-screen relative z-0 max-w-screen snap-start" id="cont1">
-            <div class="flex justify-between">
-                <div class="flex flex-col size-max">
-                    <h1>Pablo Sánchez</h1>
-                    <h2>Design & research</h2>
+        <div class="min-h-screen relative z-0 max-w-screen snap-start grid grid-rows-contenedores p-4 gap-4" id="cont1">
+            <div class="flex justify-between px-1/2 py-6">
+                <div class="flex flex-col size-max text-2xl">
+                    <h1 class="font-sans">Pablo Sánchez</h1>
+                    <h2 class="font-playfair">Design & research</h2>
                 </div>
                 <h3>
-                    <a class="talk" href="#footer">Talk</a>
+                    <a class="talk text-xl" href="#footer">Talk</a>
                 </h3>
             </div>
             <div class="flex justify-center items-center">
                 
-                <h1 class="text-4xl" id="conttitular">
+                <h1 class="text-3xl font-sans p-4" id="conttitular">
                     Designer for
                     <br>
                     music and film.
@@ -29,33 +42,33 @@
                     Currently at <a href="https://www.ableton.com/">Ableton</a>.
                 </h1>
             </div>
-            <div class="flex justify-between items-center">
-                <div class="foto de768">
-                    <img class="hidden"
+            <div class="flex items-center relative justify-between">
+                <div class="foto de768 hidden">
+                    <img
                         src="https://i-p.rmcdn.net/563f7a8200c77b0c71e37c9c/553239/upload-74f0c6a0-3322-11e6-a744-ddb4d65686ba.jpg?w=404">
                 </div>
-                <div class="left-5% self-start">
-                    <h4>
+                <div class="flex justify-start self-start top-0 p-4">
+                    <h4 class="text-xl">
                         <ul>
-                            <li class="listcontact mail" id="mail">hola@pavlosanchez.com</li>
-                            <li class="listcontact" id="tel">+34 623 989 122</li>
-                            <li class="listcontact" id="linkedin">linkedin/pavlosanchez</li>
-                            <li class="listcontact" id="twitter">@pavlosanchez</li>
+                            <li class="listcontact" id="mail"><span class="mr-10">M</span>hola@pavlosanchez.com</li>
+                            <li class="listcontact" id="tel"><span class="mr-10">T</span>+34 623 989 122</li>
+                            <li class="listcontact" id="linkedin"><span class="mr-10">L</span>linkedin/pavlosanchez</li>
+                            <li class="listcontact" id="twitter"><span class="mr-10">T</span>@pavlosanchez</li>
                         </ul>
                     </h4>
                 </div>
-                <a class="flex size-[50px] animate-bounce text-white absolute justify-self-center left-[50%]" href="#cont2">
+                <a class="flex size-14 animate-bounce text-white absolute self-end w-screen max-w-full justify-center" href="#cont2">
                     <svg class="arrow_down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <polyline points="19 12 12 19 5 12"></polyline>
                     </svg>
                 </a>
-                <div class="foto de769">
-                    <img class="max-w-[192px] max-h-[192px]" src="https://i-p.rmcdn.net/563f7a8200c77b0c71e37c9c/553239/upload-74f0c6a0-3322-11e6-a744-ddb4d65686ba.jpg?w=404">
+                <div class="foto de769 right-0">
+                    <img class="max-w-48 max-h-48" src="https://i-p.rmcdn.net/563f7a8200c77b0c71e37c9c/553239/upload-74f0c6a0-3322-11e6-a744-ddb4d65686ba.jpg?w=404">
                 </div>
             </div> 
         </div>
-        <div class="min-h-screen relative z-0 max-w-screen snap-start" id="cont2">
+        <div class="min-h-screen relative z-0 max-w-screen snap-start grid grid-rows-contenedores p-4 gap-4" id="cont2">
             <div class="cabezadecont">
                 <h2>Design for</h2>
                 <h1>
@@ -87,7 +100,7 @@
             </div>
             
         </div>
-        <div class="min-h-screen relative z-0 max-w-screen snap-start" id="cont3">
+        <div class="min-h-screen relative z-0 max-w-screen snap-start grid grid-rows-contenedores p-4 gap-4" id="cont3">
             <dvi class="cabezadecont">
                 <h2>Design for</h2>
                 <h1>
@@ -100,7 +113,7 @@
                 <h3><a href="https://www.youtube.com/watch?v=quAFc1rdUB8">See video</a></h3>
             </dvi>
         </div>
-        <div class="min-h-screen relative z-0 max-w-screen snap-start" id="cont4">
+        <div class="min-h-screen relative z-0 max-w-screen snap-start grid grid-rows-contenedores p-4 gap-4" id="cont4">
             <div class="cabezadecont">
                 <h2>Credit titles for</h2>
                 <h1>
@@ -120,7 +133,7 @@
                 </div>
             </div>
         </div>
-        <div class="min-h-screen relative z-0 max-w-screen snap-start" id="cont5">
+        <div class="min-h-screen relative z-0 max-w-screen snap-start grid grid-rows-contenedores p-4 gap-4" id="cont5">
             <div class="centrodecont">
                 <img src="https://i-p.rmcdn.net/563f7a8200c77b0c71e37c9c/553239/upload-a3fa54fb-f0ca-410a-89b6-44561d3e8be8.png">
             </div>
@@ -135,7 +148,7 @@
                 <h3><a href="http://beyondui.org/beyondui.pdf">See project</a></h3>
             </div>
         </div>
-        <div class="min-h-screen relative z-0 max-w-screen snap-start" id="cont6">
+        <div class="min-h-screen relative z-0 max-w-screen snap-start grid grid-rows-contenedores p-4 gap-4" id="cont6">
             <div class="cabezadecont">
                 <h2>Identity and credit titles for</h2>
                 <h1>
@@ -148,7 +161,7 @@
                 <h3><a href="http://lajuventudbaila.pavlosanchez.com/">See case study</a></h3>
             </div>
         </div>
-        <div class="min-h-screen relative z-0 max-w-screen snap-start" id="cont7">
+        <div class="min-h-screen relative z-0 max-w-screen snap-start grid grid-rows-contenedores p-4 gap-4" id="cont7">
             <div class="centrodecont">
                 <img src="https://i-p.rmcdn.net/563f7a8200c77b0c71e37c9c/553239/upload-c0068620-331d-11e6-b061-3d3acce0919f.png">
             </div>
@@ -168,7 +181,7 @@
 
             </div>
         </div>
-        <div class="min-h-screen relative z-0 max-w-screen snap-start" id="cont8">
+        <div class="min-h-screen relative z-0 max-w-screen snap-start grid grid-rows-contenedores p-4 gap-4" id="cont8">
             
             <div class="cabezadecont">
                 <h2>Abstract for</h2>
@@ -208,7 +221,7 @@
                 <h3><a href="http://www.gredits.org/en/scientific-production/congresses/interface-politics-2016/interface-politics-gredits-publications/">Download publication</a></h3>
             </div>
         </div>
-        <div class="min-h-screen relative z-0 max-w-screen snap-start" id="cont9">
+        <div class="min-h-screen relative z-0 max-w-screen snap-start grid grid-rows-contenedores p-4 gap-4" id="cont9">
             <div class="cabezadecont">
                 <h2>Credit titles and identity for</h2>
                 <h1>
@@ -232,7 +245,7 @@
                 </h2>
             </div>
         </div>
-        <div class="min-h-screen relative z-0 max-w-screen snap-start" id="cont10">
+        <div class="min-h-screen relative z-0 max-w-screen snap-start grid grid-rows-contenedores p-4 gap-4" id="cont10">
             <div class="centrodecont">
                 <img src="https://i-p.rmcdn.net/563f7a8200c77b0c71e37c9c/553239/upload-069352c5-85e0-437f-ba0c-0b3a8824c3e9.png">
             </div>
@@ -245,7 +258,7 @@
                 </h1>
             </div>
         </div>
-        <div class="min-h-screen relative z-0 max-w-screen snap-start" id="cont11">
+        <div class="min-h-screen relative z-0 max-w-screen snap-start grid grid-rows-contenedores p-4 gap-4" id="cont11">
             <div class="centrodecont"></div>
             <div class="cabezadecont">
                 <h2>UI design for</h2>
@@ -257,7 +270,7 @@
                 <h3><a href="http://trappr.pavlosanchez.com/">See project</a></h3>
             </div>
         </div>
-        <div class="min-h-screen relative z-0 max-w-screen snap-start" id="cont12">
+        <div class="min-h-screen relative z-0 max-w-screen snap-start grid grid-rows-contenedores p-4 gap-4" id="cont12">
             <div class="centrodecont">
                 <img src="https://i-p.rmcdn.net/563f7a8200c77b0c71e37c9c/434783/upload-f4a1e510-e934-11e5-ad1e-4135d6ae0eca.jpg">
             </div>
@@ -269,7 +282,7 @@
                 </h1>
             </div>
         </div>
-        <div class="min-h-screen relative z-0 max-w-screen snap-start" id="cont13">
+        <div class="min-h-screen relative z-0 max-w-screen snap-start grid grid-rows-contenedores p-4 gap-4" id="cont13">
             <div class="centrodecont"></div>
             <div class="cabezadecont">
                 <h2>UX/UI design for</h2>
@@ -281,7 +294,7 @@
                 </h1>
             </div>
         </div>
-        <div class="min-h-screen relative z-0 max-w-screen snap-start" id="cont14">
+        <div class="min-h-screen relative z-0 max-w-screen snap-start grid grid-rows-contenedores p-4 gap-4" id="cont14">
             <div class="cabezadecont">
                 <h2>UI design for</h2>
                 <h1>
@@ -296,7 +309,7 @@
                 <h2>Behaviour demo</h2>
             </div>
         </div>
-        <div class="min-h-screen relative z-0 max-w-screen snap-start" id="cont15">
+        <div class="min-h-screen relative z-0 max-w-screen snap-start grid grid-rows-contenedores p-4 gap-4" id="cont15">
             <div class="cabezadecont">
                 <h2>Identity for</h2>
                 <h1>
@@ -326,7 +339,7 @@
                 </div>
             </div>
         </div>
-        <div class="min-h-screen relative z-0 max-w-screen snap-start" id="cont16">
+        <div class="min-h-screen relative z-0 max-w-screen snap-start grid grid-rows-contenedores p-4 gap-4" id="cont16">
             <div class="cabezadecont">
                 <h2>Music video for</h2>
                 <h1>
