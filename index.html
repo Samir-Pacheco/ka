@@ -10,13 +10,11 @@
     <style type="text/tailwindcss">
         :root{
             --grid-rows-contenedores: auto 1fr auto;
-            --justify-self-fend: flex-end;
         }
         
         @theme {
             --font-playfair: "Playfair Display";
-            --grid-rows-contenedores: var(--grid-rows-contenedores)
-            --justify-self-fend: var(--justify-self-fend)
+            --grid-rows-contenedores: var(--grid-rows-contenedores);
         }
     </style>
 </head>
@@ -29,7 +27,7 @@
                     <h2 class="font-playfair">Design & research</h2>
                 </div>
                 <h3>
-                    <a class="talk text-xl" href="#footer">Talk</a>
+                    <a class="talk text-xl max-md:pr-4" href="#footer">Talk</a>
                 </h3>
             </div>
             <div class="flex justify-center items-center">
@@ -42,9 +40,9 @@
                     Currently at <a href="https://www.ableton.com/">Ableton</a>.
                 </h1>
             </div>
-            <div class="flex items-center relative justify-between">
-                <div class="foto de768 hidden">
-                    <img
+            <div class="flex items-center relative justify-between max-md:flex-col">
+                <div class="foto de768 md:hidden">
+                    <img class="max-w-48 max-h-48"
                         src="https://i-p.rmcdn.net/563f7a8200c77b0c71e37c9c/553239/upload-74f0c6a0-3322-11e6-a744-ddb4d65686ba.jpg?w=404">
                 </div>
                 <div class="flex justify-start self-start top-0 p-4">
@@ -57,18 +55,18 @@
                         </ul>
                     </h4>
                 </div>
-                <a class="flex size-14 animate-bounce text-white absolute self-end w-screen max-w-full justify-center" href="#cont2">
+                <a class="flex size-14 animate-bounce text-white absolute self-end w-screen max-w-full justify-center -bottom-6" href="#cont2">
                     <svg class="arrow_down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <polyline points="19 12 12 19 5 12"></polyline>
                     </svg>
                 </a>
-                <div class="foto de769 right-0">
+                <div class="foto de769 right-0 max-md:hidden">
                     <img class="max-w-48 max-h-48" src="https://i-p.rmcdn.net/563f7a8200c77b0c71e37c9c/553239/upload-74f0c6a0-3322-11e6-a744-ddb4d65686ba.jpg?w=404">
                 </div>
             </div> 
         </div>
-        <div class="min-h-screen relative z-0 max-w-screen snap-start grid grid-rows-contenedores p-4 gap-4" id="cont2">
+        <div class="min-h-screen relative z-0 max-w-screen snap-start grid grid-rows-contenedores p-4 gap-4 bg-indigo-500" id="cont2">
             <div class="cabezadecont">
                 <h2>Design for</h2>
                 <h1>
@@ -80,14 +78,14 @@
                 <h3><a href="https://www.ableton.com/en/note/">See project</a></h3>
             </div>
             <div class="contdecont">
-                <div class="imgtels">
-                    <div class="imgtel tel1">
+                <div class="imgtels flex flex-wrap justify-center">
+                    <div class="imgtel tel1 w-74 h-full">
                         <img src="https://i-p.rmcdn.net/563f7a8200c77b0c71e37c9c/553239/upload-974f3ad7-5f23-47c4-aab7-4b99e6050687.png?w=912">
                     </div>
-                    <div class="imgtel tel2">
+                    <div class="imgtel tel2 w-74 h-full">
                         <img src="https://i-p.rmcdn.net/563f7a8200c77b0c71e37c9c/553239/upload-17eeb93a-2c35-42f5-b75b-a2ad57da13f9.png?w=912">
                     </div>
-                    <div class="imgtel tel3">
+                    <div class="imgtel tel3 w-74 h-full">
                         <img src="https://i-p.rmcdn.net/563f7a8200c77b0c71e37c9c/553239/upload-064c7745-63ab-4edc-a4b8-5809f57105e7.png?w=912">
                     </div>
                 </div>
@@ -100,8 +98,8 @@
             </div>
             
         </div>
-        <div class="min-h-screen relative z-0 max-w-screen snap-start grid grid-rows-contenedores p-4 gap-4" id="cont3">
-            <dvi class="cabezadecont">
+        <div class="min-h-screen relative z-0 max-w-screen snap-start grid grid-rows-contenedores p-4 gap-4 bg-zinc-800" id="cont3">
+            <div class="cabezadecont">
                 <h2>Design for</h2>
                 <h1>
                     Intorno Labs, an
@@ -111,10 +109,13 @@
                     <br>attributes.
                 </h1>
                 <h3><a href="https://www.youtube.com/watch?v=quAFc1rdUB8">See video</a></h3>
-            </dvi>
+            </div>
+            <div class="md:flex absolute content-center justify-center inset-0 object-contain w-full h-full -z-10">
+                <img src="https://c-p.rmcdn.net/563f7a8200c77b0c71e37c9c/553239/upload-9fb13559-9694-4f6e-bb39-1bfc38aadca1.gif">
+            </div>
         </div>
-        <div class="min-h-screen relative z-0 max-w-screen snap-start grid grid-rows-contenedores p-4 gap-4" id="cont4">
-            <div class="cabezadecont">
+        <div class="min-h-screen relative z-0 max-w-screen snap-start grid grid-rows-contenedores p-4 gap-4 bg-[#8e7c5b]" id="cont4">
+            <div class="cabezadecont text-black">
                 <h2>Credit titles for</h2>
                 <h1>
                     'Mirror Mirror', a
@@ -124,9 +125,9 @@
                     <br>building our identities
                 </h1>
             </div>
-            <div class="contdecont">
-                <div class="videovimeo">
-                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/699741963?h=2f5be1809c"
+            <div class="contdecont flex justify-center absolute object-contain inset-0">
+                <div class="videovimeo max-w-screen-sm w-full -z-10">
+                    <iframe class="w-full h-full" title="vimeo-player" src="https://player.vimeo.com/video/699741963?h=2f5be1809c"
                         frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
                         allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                         allowfullscreen></iframe>
@@ -134,8 +135,8 @@
             </div>
         </div>
         <div class="min-h-screen relative z-0 max-w-screen snap-start grid grid-rows-contenedores p-4 gap-4" id="cont5">
-            <div class="centrodecont">
-                <img src="https://i-p.rmcdn.net/563f7a8200c77b0c71e37c9c/553239/upload-a3fa54fb-f0ca-410a-89b6-44561d3e8be8.png">
+            <div class="centrodecont absolute flex justify-center self-center w-full">
+                <img class="max-w-screen-sm w-full" src="https://i-p.rmcdn.net/563f7a8200c77b0c71e37c9c/553239/upload-a3fa54fb-f0ca-410a-89b6-44561d3e8be8.png">
             </div>
             <div class="cabezadecont">
                 <h2>Visual essay</h2>
@@ -148,8 +149,8 @@
                 <h3><a href="http://beyondui.org/beyondui.pdf">See project</a></h3>
             </div>
         </div>
-        <div class="min-h-screen relative z-0 max-w-screen snap-start grid grid-rows-contenedores p-4 gap-4" id="cont6">
-            <div class="cabezadecont">
+        <div class="min-h-screen relative z-0 max-w-screen snap-start grid grid-rows-contenedores p-4 gap-4 bg-white" id="cont6">
+            <div class="cabezadecont text-black">
                 <h2>Identity and credit titles for</h2>
                 <h1>
                     'La Juventud Baila', a
@@ -160,9 +161,14 @@
                 </h1>
                 <h3><a href="http://lajuventudbaila.pavlosanchez.com/">See case study</a></h3>
             </div>
+            <div class="contdecont flex justify-center absolute object-contain inset-0">
+                <div class="videovimeo max-w-screen-sm w-full -z-10">
+                    <iframe class="w-full h-full" title="vimeo-player" src="https://player.vimeo.com/video/292366104?h=ea8caa52d4" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
-        <div class="min-h-screen relative z-0 max-w-screen snap-start grid grid-rows-contenedores p-4 gap-4" id="cont7">
-            <div class="centrodecont">
+        <div class="min-h-screen relative z-0 max-w-screen snap-start grid grid-rows-contenedores p-4 gap-4 bg-blue-500" id="cont7">
+            <div class="centrodecont absolute flex justify-center self-center w-full">
                 <img src="https://i-p.rmcdn.net/563f7a8200c77b0c71e37c9c/553239/upload-c0068620-331d-11e6-b061-3d3acce0919f.png">
             </div>
             <div class="cabezadecont">
@@ -174,16 +180,10 @@
                 </h1>
                 <h3>See case study</h3>
             </div>
-            <div class="contdecont">
-
-            </div>
-            <div class="piedecont">
-
-            </div>
         </div>
         <div class="min-h-screen relative z-0 max-w-screen snap-start grid grid-rows-contenedores p-4 gap-4" id="cont8">
             
-            <div class="cabezadecont">
+            <div class="cabezadecont sticky top-0">
                 <h2>Abstract for</h2>
                 <h1>
                     Interface politics
@@ -193,7 +193,7 @@
                 </h1>
             </div>
             <div class="contdecont">
-                <div class="centrodecont">
+                <div class="centrodecont flex justify-self-center w-3/4">
                 <p>
                     The interface is born with the aim to establish a dialogue between machine and humans. It's a tool that allows the
                     individual to communicate with many devices, replacing, for instance, the long lines of code (cryptic and inaccessible
@@ -217,7 +217,7 @@
                 </p>
             </div>
             </div>
-            <div class="piedecont">
+            <div class="piedecont text-blue-500 flex justify-self-center">
                 <h3><a href="http://www.gredits.org/en/scientific-production/congresses/interface-politics-2016/interface-politics-gredits-publications/">Download publication</a></h3>
             </div>
         </div>
